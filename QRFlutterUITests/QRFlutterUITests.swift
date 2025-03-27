@@ -29,6 +29,13 @@ final class QRFlutterUITests: XCTestCase {
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let scanButton = app.buttons["scanQR"]
+        
+        XCTAssertTrue(scanButton.exists, "Scan button not found")
+        
+        scanButton.tap()
+        
+        
     }
 
     @MainActor

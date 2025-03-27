@@ -16,7 +16,17 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationLink("Escanear QR", destination: QRScannerView())
+                Spacer()
+                NavigationLink(destination: QRScannerView()) {
+                    ScanButton()
+                }.accessibilityLabel("scanQR")
+                Spacer()
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: QRScannerView()) {
+                        VaultButton()
+                    }.accessibilityLabel("vault")
+                }.padding(20)
             }
         }
     }
