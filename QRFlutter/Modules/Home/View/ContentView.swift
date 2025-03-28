@@ -83,7 +83,7 @@ struct ContentView: View {
                         HStack {
                             Spacer()
                             Button {
-                                self.router.navigate(to: .qrScanner)
+                                self.router.navigate(to: .flutterScreen)
                             } label: {
                                 VaultButton()
                             }

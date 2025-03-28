@@ -12,7 +12,7 @@ import Flutter
 @main
 struct QRFlutterApp: App {
     @StateObject private var qrRepository: QRRepository
-    @StateObject private var flutterEngine: FlutterEngineWrapper
+    //@StateObject private var flutterEngine: FlutterEngineWrapper
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -28,9 +28,9 @@ struct QRFlutterApp: App {
     }()
     
     init() {
-        let engineWrapper = FlutterEngineWrapper()
+        //let engineWrapper = FlutterEngineWrapper()
         self._qrRepository = StateObject(wrappedValue: QRRepository.shared)
-        self._flutterEngine = StateObject(wrappedValue: engineWrapper)
+        //self._flutterEngine = StateObject(wrappedValue: engineWrapper)
     }
     
 
@@ -38,7 +38,7 @@ struct QRFlutterApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(qrRepository)
-                .environmentObject(flutterEngine)
+                //.environmentObject(flutterEngine)
         }
         .modelContainer(sharedModelContainer)
     }
