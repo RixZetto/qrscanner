@@ -1,0 +1,10 @@
+lane :setup_flutter do
+    sh "echo 'Configurando Flutter'"
+    sh "cd flutter_module && flutter pub get"
+    sh "cd flutter_module && flutter build ios --no-codesign"
+    sh "mkdir -p ios/Flutter"
+    sh "cp -R flutter_module/.ios/Flutter/engine/Flutter.xcframework ios/Flutter/"
+    sh "cp -R flutter_module/.ios/Flutter/App.framework ios/Flutter/"
+    sh "cd ios && xcodebuild -project QRFlutter.xcodeproj -scheme QRFlutter clean build"
+    sh "echo 'Flutter configurado correctamente'"
+end

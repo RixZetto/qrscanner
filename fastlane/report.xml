@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00019">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to ios flutter_build_ios lane" time="0.000116">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cd .. &amp;&amp; ls " time="0.008755">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: cd ../flutter_module &amp;&amp; flutter pub get &amp;&amp; flutter build ios-framework --no-debug --no-cocoapods" time="22.349639">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: rm -rf ../App.xcframework" time="0.015943">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: rm -rf ../Flutter.xcframework" time="0.012581">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: mv ../flutter_module/build/ios/framework/Release/App.xcframework ../" time="0.005439">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: mv ../flutter_module/build/ios/framework/Release/Flutter.xcframework ../" time="0.003961">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

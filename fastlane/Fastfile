@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+
+  lane :dev do 
+    flutter_build_ios
+  end
+
+  lane :release do
+    flutter_build_ios
+    upload_to_app_store
+  end
+
+  lane :beta do
+    flutter_build_ios
+    upload_to_testflight
+  end
+
+  private_lane :flutter_build_ios do
+    sh "cd .. && ls "
+    sh "cd ../flutter_module && flutter pub get && flutter build ios-framework --no-debug --no-cocoapods"
+    
+    # Remove old xcframeworks
+    sh "rm -rf ../App.xcframework"
+    sh "rm -rf ../Flutter.xcframework"
+
+    # Install new xcframeworks
+    sh "mv ../flutter_module/build/ios/framework/Release/App.xcframework ../"
+    sh "mv ../flutter_module/build/ios/framework/Release/Flutter.xcframework ../"
+  end
+
+end
