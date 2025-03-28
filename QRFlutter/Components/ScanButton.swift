@@ -12,50 +12,53 @@ struct ScanButton: View {
     @State private var shimmerOffset: CGFloat = -150
     
     var body: some View {
-        Button {
-            withAnimation(.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0)) {
-                isPressed.toggle()
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                isPressed.toggle()
-            }
-            
-        } label: {
-            HStack {
-                Image(systemName: "qrcode.viewfinder")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
-                    .padding()
-                Text("Escanear QR")
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .padding()
-            }
-            .background {
-                ZStack {
-                    Color.blue.clipShape(Capsule())
-                    
-                    LinearGradient(
-                        gradient: Gradient(colors: [.clear, .white, .clear]),
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    ).frame(width: 200, height: 200)
-                        .offset(x: self.shimmerOffset)
-                        .blendMode(.overlay)
-                }
-            }
-            .clipShape(Capsule())
-            .onAppear {
-                self.startAnimation()
-            }
-            
+        
+        HStack {
+            Image(systemName: "qrcode.viewfinder")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .foregroundColor(.white)
+                .padding()
+            Text("Escanear QR")
+                .foregroundColor(.white)
+                .font(.largeTitle)
+                .padding()
         }
+        .background {
+            ZStack {
+                Color.blue.clipShape(Capsule())
+                
+                LinearGradient(
+                    gradient: Gradient(colors: [.clear, .white, .clear]),
+                    startPoint: .leading,
+                    endPoint: .trailing
+                ).frame(width: 200, height: 200)
+                    .offset(x: self.shimmerOffset)
+                    .blendMode(.overlay)
+            }
+        }
+        .clipShape(Capsule())
         .buttonStyle(PlainButtonStyle())
         .clipShape(RoundedRectangle(cornerRadius: 10))
+        .shadow(radius: 20)
         .scaleEffect(isPressed ? 1.2 : 1)
+        .simultaneousGesture(
+            TapGesture().onEnded {
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0)) {
+                    isPressed.toggle()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    isPressed.toggle()
+                }
+            }
+        )
+        .onAppear {
+            self.startAnimation()
+        }
+        
+       
     }
     
     
