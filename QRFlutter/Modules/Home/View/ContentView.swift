@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @EnvironmentObject private var qrRepository: QRRepository
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State private var isAuthenticated = false
@@ -42,7 +43,7 @@ struct ContentView: View {
                     
                     // MARK: - Scan Button
                     
-                    NavigationLink(destination: ScannerView()) {
+                    NavigationLink(destination: ScannerView(qrRepository: qrRepository)) {
                         ScanButton()
                     }.accessibilityLabel("scanQR")
                     
@@ -72,7 +73,7 @@ struct ContentView: View {
                         // MARK: - Vault Button
                         HStack {
                             Spacer()
-                            NavigationLink(destination: ScannerView()) {
+                            NavigationLink(destination: ScannerView(qrRepository: qrRepository)) {
                                 VaultButton()
                             }
                             .accessibilityLabel("vault")
