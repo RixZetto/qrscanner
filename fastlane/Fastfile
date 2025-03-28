@@ -20,6 +20,7 @@ platform :ios do
 
   lane :dev do 
     flutter_build_ios
+    add_flutter_frameworks
   end
 
   lane :release do
@@ -32,6 +33,7 @@ platform :ios do
     upload_to_testflight
   end
 
+  # Lane to compile Flutter module and generate xcframeworks
   private_lane :flutter_build_ios do
     sh "cd .. && ls "
     sh "cd ../flutter_module && flutter pub get && flutter build ios-framework --no-debug --no-cocoapods"
@@ -43,6 +45,14 @@ platform :ios do
     # Install new xcframeworks
     sh "mv ../flutter_module/build/ios/framework/Release/App.xcframework ../"
     sh "mv ../flutter_module/build/ios/framework/Release/Flutter.xcframework ../"
+  end
+
+  # Lane to add xcframeworks to the Xcode project
+  private_lane :add_flutter_frameworks do
+    project_path = "../QRFlutter.xcodeproj"
+
+    sh "xcodeproj --project #{project_path} --target 'QRFlutter' --add-frameworks App.xcframework --embed"
+    sh "xcodeproj --project #{project_path} --target 'QRFlutter' --add-frameworks Flutter.xcframework --embed"
   end
 
 end
