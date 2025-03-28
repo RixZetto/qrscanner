@@ -27,6 +27,118 @@
 		4C6D680B2D94ECDE00E428B4 /* QRFlutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRFlutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D681D2D94ECE000E428B4 /* QRFlutterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRFlutterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D68272D94ECE000E428B4 /* QRFlutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRFlutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF7B2912D96A5C70031C40F /* MainActivity.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MainActivity.java; sourceTree = "<group>"; };
+		4CF7B2972D96A5C70031C40F /* launch_background.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = launch_background.xml; sourceTree = "<group>"; };
+		4CF7B2992D96A5C70031C40F /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		4CF7B29B2D96A5C70031C40F /* styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = styles.xml; sourceTree = "<group>"; };
+		4CF7B29E2D96A5C70031C40F /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		4CF7B2A12D96A5C70031C40F /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		4CF7B2A32D96A5C70031C40F /* GeneratedPluginRegistrant.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GeneratedPluginRegistrant.java; sourceTree = "<group>"; };
+		4CF7B2A82D96A5C70031C40F /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		4CF7B2AB2D96A5C70031C40F /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		4CF7B2AC2D96A5C70031C40F /* flutter.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = flutter.iml; sourceTree = "<group>"; };
+		4CF7B2AE2D96A5C70031C40F /* gradle-wrapper.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "gradle-wrapper.jar"; sourceTree = "<group>"; };
+		4CF7B2AF2D96A5C70031C40F /* gradle-wrapper.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gradle-wrapper.properties"; sourceTree = "<group>"; };
+		4CF7B2B22D96A5C70031C40F /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		4CF7B2B52D96A5C70031C40F /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		4CF7B2B62D96A5C70031C40F /* gradle.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradle.properties; sourceTree = "<group>"; };
+		4CF7B2B72D96A5C70031C40F /* gradlew */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew; sourceTree = "<group>"; };
+		4CF7B2B82D96A5C70031C40F /* gradlew.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew.bat; sourceTree = "<group>"; };
+		4CF7B2B92D96A5C70031C40F /* include_flutter.groovy */ = {isa = PBXFileReference; lastKnownFileType = text; path = include_flutter.groovy; sourceTree = "<group>"; };
+		4CF7B2BA2D96A5C70031C40F /* local.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = local.properties; sourceTree = "<group>"; };
+		4CF7B2BB2D96A5C70031C40F /* settings.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = settings.gradle; sourceTree = "<group>"; };
+		4CF7B2BD2D96A5C70031C40F /* package_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package_config.json; sourceTree = "<group>"; };
+		4CF7B2BE2D96A5C70031C40F /* package_config_subset */ = {isa = PBXFileReference; lastKnownFileType = text; path = package_config_subset; sourceTree = "<group>"; };
+		4CF7B2BF2D96A5C70031C40F /* version */ = {isa = PBXFileReference; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
+		4CF7B2C12D96A5C70031C40F /* Dart_SDK.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Dart_SDK.xml; sourceTree = "<group>"; };
+		4CF7B2C32D96A5C70031C40F /* modules.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
+		4CF7B2C42D96A5C70031C40F /* workspace.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = workspace.xml; sourceTree = "<group>"; };
+		4CF7B2C62D96A5C70031C40F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		4CF7B2C72D96A5C70031C40F /* Flutter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
+		4CF7B2C82D96A5C70031C40F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		4CF7B2CA2D96A5C70031C40F /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		4CF7B2CB2D96A5C70031C40F /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		4CF7B2CD2D96A5C70031C40F /* FlutterPluginRegistrant.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlutterPluginRegistrant.podspec; sourceTree = "<group>"; };
+		4CF7B2CF2D96A5C70031C40F /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		4CF7B2D02D96A5C70031C40F /* flutter_export_environment.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = flutter_export_environment.sh; sourceTree = "<group>"; };
+		4CF7B2D12D96A5C70031C40F /* Generated.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Generated.xcconfig; sourceTree = "<group>"; };
+		4CF7B2D22D96A5C70031C40F /* podhelper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = podhelper.rb; sourceTree = "<group>"; };
+		4CF7B2D32D96A5C70031C40F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CF7B2D52D96A5C70031C40F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CF7B2D62D96A5C70031C40F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CF7B2D72D96A5C70031C40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CF7B2D82D96A5C70031C40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF7B2D92D96A5C70031C40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CF7B2DB2D96A5C70031C40F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CF7B2DC2D96A5C70031C40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CF7B2DF2D96A5C70031C40F /* Runner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Runner.xcodeproj; sourceTree = "<group>"; };
+		4CF7B2E02D96A5C70031C40F /* Runner.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Runner.xcworkspace; sourceTree = "<group>"; };
+		4CF7B2E22D96A5C70031C40F /* main.dart */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.dart; sourceTree = "<group>"; };
+		4CF7B2E42D96A5C70031C40F /* widget_test.dart */ = {isa = PBXFileReference; lastKnownFileType = text; path = widget_test.dart; sourceTree = "<group>"; };
+		4CF7B2E62D96A5C70031C40F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4CF7B2E72D96A5C70031C40F /* .metadata */ = {isa = PBXFileReference; lastKnownFileType = text; path = .metadata; sourceTree = "<group>"; };
+		4CF7B2E82D96A5C70031C40F /* analysis_options.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = analysis_options.yaml; sourceTree = "<group>"; };
+		4CF7B2E92D96A5C70031C40F /* flutter_module.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = flutter_module.iml; sourceTree = "<group>"; };
+		4CF7B2EA2D96A5C70031C40F /* flutter_module_android.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = flutter_module_android.iml; sourceTree = "<group>"; };
+		4CF7B2EB2D96A5C70031C40F /* pubspec.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = pubspec.lock; sourceTree = "<group>"; };
+		4CF7B2EC2D96A5C70031C40F /* pubspec.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pubspec.yaml; sourceTree = "<group>"; };
+		4CF7B2ED2D96A5C70031C40F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CF7B2F42D96A62C0031C40F /* MainActivity.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = MainActivity.java; sourceTree = "<group>"; };
+		4CF7B2FA2D96A62C0031C40F /* launch_background.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = launch_background.xml; sourceTree = "<group>"; };
+		4CF7B2FC2D96A62C0031C40F /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		4CF7B2FE2D96A62C0031C40F /* styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = styles.xml; sourceTree = "<group>"; };
+		4CF7B3012D96A62C0031C40F /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		4CF7B3042D96A62C0031C40F /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		4CF7B3062D96A62C0031C40F /* GeneratedPluginRegistrant.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GeneratedPluginRegistrant.java; sourceTree = "<group>"; };
+		4CF7B30B2D96A62C0031C40F /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		4CF7B30E2D96A62C0031C40F /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		4CF7B30F2D96A62C0031C40F /* flutter.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = flutter.iml; sourceTree = "<group>"; };
+		4CF7B3112D96A62C0031C40F /* gradle-wrapper.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "gradle-wrapper.jar"; sourceTree = "<group>"; };
+		4CF7B3122D96A62C0031C40F /* gradle-wrapper.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gradle-wrapper.properties"; sourceTree = "<group>"; };
+		4CF7B3152D96A62C0031C40F /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		4CF7B3182D96A62C0031C40F /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		4CF7B3192D96A62C0031C40F /* gradle.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradle.properties; sourceTree = "<group>"; };
+		4CF7B31A2D96A62C0031C40F /* gradlew */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew; sourceTree = "<group>"; };
+		4CF7B31B2D96A62C0031C40F /* gradlew.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew.bat; sourceTree = "<group>"; };
+		4CF7B31C2D96A62C0031C40F /* include_flutter.groovy */ = {isa = PBXFileReference; lastKnownFileType = text; path = include_flutter.groovy; sourceTree = "<group>"; };
+		4CF7B31D2D96A62C0031C40F /* local.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = local.properties; sourceTree = "<group>"; };
+		4CF7B31E2D96A62C0031C40F /* settings.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = settings.gradle; sourceTree = "<group>"; };
+		4CF7B3202D96A62C0031C40F /* package_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package_config.json; sourceTree = "<group>"; };
+		4CF7B3212D96A62C0031C40F /* package_config_subset */ = {isa = PBXFileReference; lastKnownFileType = text; path = package_config_subset; sourceTree = "<group>"; };
+		4CF7B3222D96A62C0031C40F /* version */ = {isa = PBXFileReference; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
+		4CF7B3242D96A62C0031C40F /* Dart_SDK.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Dart_SDK.xml; sourceTree = "<group>"; };
+		4CF7B3262D96A62C0031C40F /* modules.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = modules.xml; sourceTree = "<group>"; };
+		4CF7B3272D96A62C0031C40F /* workspace.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = workspace.xml; sourceTree = "<group>"; };
+		4CF7B3292D96A62C0031C40F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		4CF7B32A2D96A62C0031C40F /* Flutter.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
+		4CF7B32B2D96A62C0031C40F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		4CF7B32D2D96A62C0031C40F /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		4CF7B32E2D96A62C0031C40F /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		4CF7B3302D96A62C0031C40F /* FlutterPluginRegistrant.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlutterPluginRegistrant.podspec; sourceTree = "<group>"; };
+		4CF7B3322D96A62C0031C40F /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		4CF7B3332D96A62C0031C40F /* flutter_export_environment.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = flutter_export_environment.sh; sourceTree = "<group>"; };
+		4CF7B3342D96A62C0031C40F /* Generated.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Generated.xcconfig; sourceTree = "<group>"; };
+		4CF7B3352D96A62C0031C40F /* podhelper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = podhelper.rb; sourceTree = "<group>"; };
+		4CF7B3362D96A62C0031C40F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CF7B3382D96A62C0031C40F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CF7B3392D96A62C0031C40F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CF7B33A2D96A62C0031C40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CF7B33B2D96A62C0031C40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF7B33C2D96A62C0031C40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CF7B33E2D96A62C0031C40F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CF7B33F2D96A62C0031C40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CF7B3422D96A62C0031C40F /* Runner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Runner.xcodeproj; sourceTree = "<group>"; };
+		4CF7B3432D96A62C0031C40F /* Runner.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Runner.xcworkspace; sourceTree = "<group>"; };
+		4CF7B3452D96A62C0031C40F /* main.dart */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.dart; sourceTree = "<group>"; };
+		4CF7B3472D96A62C0031C40F /* widget_test.dart */ = {isa = PBXFileReference; lastKnownFileType = text; path = widget_test.dart; sourceTree = "<group>"; };
+		4CF7B3492D96A62C0031C40F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4CF7B34A2D96A62C0031C40F /* .metadata */ = {isa = PBXFileReference; lastKnownFileType = text; path = .metadata; sourceTree = "<group>"; };
+		4CF7B34B2D96A62C0031C40F /* analysis_options.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = analysis_options.yaml; sourceTree = "<group>"; };
+		4CF7B34C2D96A62C0031C40F /* flutter_module.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = flutter_module.iml; sourceTree = "<group>"; };
+		4CF7B34D2D96A62C0031C40F /* flutter_module_android.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = flutter_module_android.iml; sourceTree = "<group>"; };
+		4CF7B34E2D96A62C0031C40F /* pubspec.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = pubspec.lock; sourceTree = "<group>"; };
+		4CF7B34F2D96A62C0031C40F /* pubspec.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pubspec.yaml; sourceTree = "<group>"; };
+		4CF7B3502D96A62C0031C40F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -78,6 +190,7 @@
 				4C6D680D2D94ECDE00E428B4 /* QRFlutter */,
 				4C6D68202D94ECE000E428B4 /* QRFlutterTests */,
 				4C6D682A2D94ECE000E428B4 /* QRFlutterUITests */,
+				4CF7B2902D96A5C70031C40F /* Frameworks */,
 				4C6D680C2D94ECDE00E428B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +201,715 @@
 				4C6D680B2D94ECDE00E428B4 /* QRFlutter.app */,
 				4C6D681D2D94ECE000E428B4 /* QRFlutterTests.xctest */,
 				4C6D68272D94ECE000E428B4 /* QRFlutterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CF7B2902D96A5C70031C40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3512D96A62C0031C40F /* flutter_module */,
+				4CF7B2EE2D96A5C70031C40F /* flutter_module */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CF7B2922D96A5C70031C40F /* host */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2912D96A5C70031C40F /* MainActivity.java */,
+			);
+			path = host;
+			sourceTree = "<group>";
+		};
+		4CF7B2932D96A5C70031C40F /* flutter_module */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2922D96A5C70031C40F /* host */,
+			);
+			path = flutter_module;
+			sourceTree = "<group>";
+		};
+		4CF7B2942D96A5C70031C40F /* example */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2932D96A5C70031C40F /* flutter_module */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		4CF7B2952D96A5C70031C40F /* com */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2942D96A5C70031C40F /* example */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		4CF7B2962D96A5C70031C40F /* java */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2952D96A5C70031C40F /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		4CF7B2982D96A5C70031C40F /* drawable */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2972D96A5C70031C40F /* launch_background.xml */,
+			);
+			path = drawable;
+			sourceTree = "<group>";
+		};
+		4CF7B29A2D96A5C70031C40F /* mipmap-hdpi */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2992D96A5C70031C40F /* ic_launcher.png */,
+			);
+			path = "mipmap-hdpi";
+			sourceTree = "<group>";
+		};
+		4CF7B29C2D96A5C70031C40F /* values */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B29B2D96A5C70031C40F /* styles.xml */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		4CF7B29D2D96A5C70031C40F /* res */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2982D96A5C70031C40F /* drawable */,
+				4CF7B29A2D96A5C70031C40F /* mipmap-hdpi */,
+				4CF7B29C2D96A5C70031C40F /* values */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		4CF7B29F2D96A5C70031C40F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2962D96A5C70031C40F /* java */,
+				4CF7B29D2D96A5C70031C40F /* res */,
+				4CF7B29E2D96A5C70031C40F /* AndroidManifest.xml */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4CF7B2A02D96A5C70031C40F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B29F2D96A5C70031C40F /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4CF7B2A22D96A5C70031C40F /* app */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A02D96A5C70031C40F /* src */,
+				4CF7B2A12D96A5C70031C40F /* build.gradle */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		4CF7B2A42D96A5C70031C40F /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A32D96A5C70031C40F /* GeneratedPluginRegistrant.java */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		4CF7B2A52D96A5C70031C40F /* flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A42D96A5C70031C40F /* plugins */,
+			);
+			path = flutter;
+			sourceTree = "<group>";
+		};
+		4CF7B2A62D96A5C70031C40F /* io */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A52D96A5C70031C40F /* flutter */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		4CF7B2A72D96A5C70031C40F /* java */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A62D96A5C70031C40F /* io */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		4CF7B2A92D96A5C70031C40F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A72D96A5C70031C40F /* java */,
+				4CF7B2A82D96A5C70031C40F /* AndroidManifest.xml */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4CF7B2AA2D96A5C70031C40F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A92D96A5C70031C40F /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4CF7B2AD2D96A5C70031C40F /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2AA2D96A5C70031C40F /* src */,
+				4CF7B2AB2D96A5C70031C40F /* build.gradle */,
+				4CF7B2AC2D96A5C70031C40F /* flutter.iml */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		4CF7B2B02D96A5C70031C40F /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2AE2D96A5C70031C40F /* gradle-wrapper.jar */,
+				4CF7B2AF2D96A5C70031C40F /* gradle-wrapper.properties */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
+		4CF7B2B12D96A5C70031C40F /* gradle */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2B02D96A5C70031C40F /* wrapper */,
+			);
+			path = gradle;
+			sourceTree = "<group>";
+		};
+		4CF7B2B32D96A5C70031C40F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2B22D96A5C70031C40F /* AndroidManifest.xml */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4CF7B2B42D96A5C70031C40F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2B32D96A5C70031C40F /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4CF7B2BC2D96A5C70031C40F /* .android */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2A22D96A5C70031C40F /* app */,
+				4CF7B2AD2D96A5C70031C40F /* Flutter */,
+				4CF7B2B12D96A5C70031C40F /* gradle */,
+				4CF7B2B42D96A5C70031C40F /* src */,
+				4CF7B2B52D96A5C70031C40F /* build.gradle */,
+				4CF7B2B62D96A5C70031C40F /* gradle.properties */,
+				4CF7B2B72D96A5C70031C40F /* gradlew */,
+				4CF7B2B82D96A5C70031C40F /* gradlew.bat */,
+				4CF7B2B92D96A5C70031C40F /* include_flutter.groovy */,
+				4CF7B2BA2D96A5C70031C40F /* local.properties */,
+				4CF7B2BB2D96A5C70031C40F /* settings.gradle */,
+			);
+			path = .android;
+			sourceTree = "<group>";
+		};
+		4CF7B2C02D96A5C70031C40F /* .dart_tool */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2BD2D96A5C70031C40F /* package_config.json */,
+				4CF7B2BE2D96A5C70031C40F /* package_config_subset */,
+				4CF7B2BF2D96A5C70031C40F /* version */,
+			);
+			path = .dart_tool;
+			sourceTree = "<group>";
+		};
+		4CF7B2C22D96A5C70031C40F /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2C12D96A5C70031C40F /* Dart_SDK.xml */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		4CF7B2C52D96A5C70031C40F /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2C22D96A5C70031C40F /* libraries */,
+				4CF7B2C32D96A5C70031C40F /* modules.xml */,
+				4CF7B2C42D96A5C70031C40F /* workspace.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		4CF7B2C92D96A5C70031C40F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2C62D96A5C70031C40F /* Debug.xcconfig */,
+				4CF7B2C72D96A5C70031C40F /* Flutter.xcconfig */,
+				4CF7B2C82D96A5C70031C40F /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4CF7B2CC2D96A5C70031C40F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2CA2D96A5C70031C40F /* GeneratedPluginRegistrant.h */,
+				4CF7B2CB2D96A5C70031C40F /* GeneratedPluginRegistrant.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CF7B2CE2D96A5C70031C40F /* FlutterPluginRegistrant */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2CC2D96A5C70031C40F /* Classes */,
+				4CF7B2CD2D96A5C70031C40F /* FlutterPluginRegistrant.podspec */,
+			);
+			path = FlutterPluginRegistrant;
+			sourceTree = "<group>";
+		};
+		4CF7B2D42D96A5C70031C40F /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2CE2D96A5C70031C40F /* FlutterPluginRegistrant */,
+				4CF7B2CF2D96A5C70031C40F /* AppFrameworkInfo.plist */,
+				4CF7B2D02D96A5C70031C40F /* flutter_export_environment.sh */,
+				4CF7B2D12D96A5C70031C40F /* Generated.xcconfig */,
+				4CF7B2D22D96A5C70031C40F /* podhelper.rb */,
+				4CF7B2D32D96A5C70031C40F /* README.md */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		4CF7B2DE2D96A5C70031C40F /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2D52D96A5C70031C40F /* AppDelegate.h */,
+				4CF7B2D62D96A5C70031C40F /* AppDelegate.m */,
+				4CF7B2D72D96A5C70031C40F /* Assets.xcassets */,
+				4CF7B2D82D96A5C70031C40F /* Info.plist */,
+				4CF7B2DA2D96A5C70031C40F /* LaunchScreen.storyboard */,
+				4CF7B2DB2D96A5C70031C40F /* main.m */,
+				4CF7B2DD2D96A5C70031C40F /* Main.storyboard */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		4CF7B2E12D96A5C70031C40F /* .ios */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2C92D96A5C70031C40F /* Config */,
+				4CF7B2D42D96A5C70031C40F /* Flutter */,
+				4CF7B2DE2D96A5C70031C40F /* Runner */,
+				4CF7B2DF2D96A5C70031C40F /* Runner.xcodeproj */,
+				4CF7B2E02D96A5C70031C40F /* Runner.xcworkspace */,
+			);
+			path = .ios;
+			sourceTree = "<group>";
+		};
+		4CF7B2E32D96A5C70031C40F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2E22D96A5C70031C40F /* main.dart */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4CF7B2E52D96A5C70031C40F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2E42D96A5C70031C40F /* widget_test.dart */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		4CF7B2EE2D96A5C70031C40F /* flutter_module */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2BC2D96A5C70031C40F /* .android */,
+				4CF7B2C02D96A5C70031C40F /* .dart_tool */,
+				4CF7B2C52D96A5C70031C40F /* .idea */,
+				4CF7B2E12D96A5C70031C40F /* .ios */,
+				4CF7B2E32D96A5C70031C40F /* lib */,
+				4CF7B2E52D96A5C70031C40F /* test */,
+				4CF7B2E62D96A5C70031C40F /* .gitignore */,
+				4CF7B2E72D96A5C70031C40F /* .metadata */,
+				4CF7B2E82D96A5C70031C40F /* analysis_options.yaml */,
+				4CF7B2E92D96A5C70031C40F /* flutter_module.iml */,
+				4CF7B2EA2D96A5C70031C40F /* flutter_module_android.iml */,
+				4CF7B2EB2D96A5C70031C40F /* pubspec.lock */,
+				4CF7B2EC2D96A5C70031C40F /* pubspec.yaml */,
+				4CF7B2ED2D96A5C70031C40F /* README.md */,
+			);
+			path = flutter_module;
+			sourceTree = "<group>";
+		};
+		4CF7B2EF2D96A5C70031C40F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CF7B2F52D96A62C0031C40F /* host */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2F42D96A62C0031C40F /* MainActivity.java */,
+			);
+			path = host;
+			sourceTree = "<group>";
+		};
+		4CF7B2F62D96A62C0031C40F /* flutter_module */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2F52D96A62C0031C40F /* host */,
+			);
+			path = flutter_module;
+			sourceTree = "<group>";
+		};
+		4CF7B2F72D96A62C0031C40F /* example */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2F62D96A62C0031C40F /* flutter_module */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		4CF7B2F82D96A62C0031C40F /* com */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2F72D96A62C0031C40F /* example */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		4CF7B2F92D96A62C0031C40F /* java */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2F82D96A62C0031C40F /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		4CF7B2FB2D96A62C0031C40F /* drawable */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2FA2D96A62C0031C40F /* launch_background.xml */,
+			);
+			path = drawable;
+			sourceTree = "<group>";
+		};
+		4CF7B2FD2D96A62C0031C40F /* mipmap-hdpi */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2FC2D96A62C0031C40F /* ic_launcher.png */,
+			);
+			path = "mipmap-hdpi";
+			sourceTree = "<group>";
+		};
+		4CF7B2FF2D96A62C0031C40F /* values */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2FE2D96A62C0031C40F /* styles.xml */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		4CF7B3002D96A62C0031C40F /* res */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2FB2D96A62C0031C40F /* drawable */,
+				4CF7B2FD2D96A62C0031C40F /* mipmap-hdpi */,
+				4CF7B2FF2D96A62C0031C40F /* values */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		4CF7B3022D96A62C0031C40F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B2F92D96A62C0031C40F /* java */,
+				4CF7B3002D96A62C0031C40F /* res */,
+				4CF7B3012D96A62C0031C40F /* AndroidManifest.xml */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4CF7B3032D96A62C0031C40F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3022D96A62C0031C40F /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4CF7B3052D96A62C0031C40F /* app */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3032D96A62C0031C40F /* src */,
+				4CF7B3042D96A62C0031C40F /* build.gradle */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		4CF7B3072D96A62C0031C40F /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3062D96A62C0031C40F /* GeneratedPluginRegistrant.java */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		4CF7B3082D96A62C0031C40F /* flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3072D96A62C0031C40F /* plugins */,
+			);
+			path = flutter;
+			sourceTree = "<group>";
+		};
+		4CF7B3092D96A62C0031C40F /* io */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3082D96A62C0031C40F /* flutter */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		4CF7B30A2D96A62C0031C40F /* java */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3092D96A62C0031C40F /* io */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		4CF7B30C2D96A62C0031C40F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B30A2D96A62C0031C40F /* java */,
+				4CF7B30B2D96A62C0031C40F /* AndroidManifest.xml */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4CF7B30D2D96A62C0031C40F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B30C2D96A62C0031C40F /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4CF7B3102D96A62C0031C40F /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B30D2D96A62C0031C40F /* src */,
+				4CF7B30E2D96A62C0031C40F /* build.gradle */,
+				4CF7B30F2D96A62C0031C40F /* flutter.iml */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		4CF7B3132D96A62C0031C40F /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3112D96A62C0031C40F /* gradle-wrapper.jar */,
+				4CF7B3122D96A62C0031C40F /* gradle-wrapper.properties */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
+		4CF7B3142D96A62C0031C40F /* gradle */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3132D96A62C0031C40F /* wrapper */,
+			);
+			path = gradle;
+			sourceTree = "<group>";
+		};
+		4CF7B3162D96A62C0031C40F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3152D96A62C0031C40F /* AndroidManifest.xml */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		4CF7B3172D96A62C0031C40F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3162D96A62C0031C40F /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4CF7B31F2D96A62C0031C40F /* .android */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3052D96A62C0031C40F /* app */,
+				4CF7B3102D96A62C0031C40F /* Flutter */,
+				4CF7B3142D96A62C0031C40F /* gradle */,
+				4CF7B3172D96A62C0031C40F /* src */,
+				4CF7B3182D96A62C0031C40F /* build.gradle */,
+				4CF7B3192D96A62C0031C40F /* gradle.properties */,
+				4CF7B31A2D96A62C0031C40F /* gradlew */,
+				4CF7B31B2D96A62C0031C40F /* gradlew.bat */,
+				4CF7B31C2D96A62C0031C40F /* include_flutter.groovy */,
+				4CF7B31D2D96A62C0031C40F /* local.properties */,
+				4CF7B31E2D96A62C0031C40F /* settings.gradle */,
+			);
+			path = .android;
+			sourceTree = "<group>";
+		};
+		4CF7B3232D96A62C0031C40F /* .dart_tool */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3202D96A62C0031C40F /* package_config.json */,
+				4CF7B3212D96A62C0031C40F /* package_config_subset */,
+				4CF7B3222D96A62C0031C40F /* version */,
+			);
+			path = .dart_tool;
+			sourceTree = "<group>";
+		};
+		4CF7B3252D96A62C0031C40F /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3242D96A62C0031C40F /* Dart_SDK.xml */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		4CF7B3282D96A62C0031C40F /* .idea */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3252D96A62C0031C40F /* libraries */,
+				4CF7B3262D96A62C0031C40F /* modules.xml */,
+				4CF7B3272D96A62C0031C40F /* workspace.xml */,
+			);
+			path = .idea;
+			sourceTree = "<group>";
+		};
+		4CF7B32C2D96A62C0031C40F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3292D96A62C0031C40F /* Debug.xcconfig */,
+				4CF7B32A2D96A62C0031C40F /* Flutter.xcconfig */,
+				4CF7B32B2D96A62C0031C40F /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4CF7B32F2D96A62C0031C40F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B32D2D96A62C0031C40F /* GeneratedPluginRegistrant.h */,
+				4CF7B32E2D96A62C0031C40F /* GeneratedPluginRegistrant.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CF7B3312D96A62C0031C40F /* FlutterPluginRegistrant */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B32F2D96A62C0031C40F /* Classes */,
+				4CF7B3302D96A62C0031C40F /* FlutterPluginRegistrant.podspec */,
+			);
+			path = FlutterPluginRegistrant;
+			sourceTree = "<group>";
+		};
+		4CF7B3372D96A62C0031C40F /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3312D96A62C0031C40F /* FlutterPluginRegistrant */,
+				4CF7B3322D96A62C0031C40F /* AppFrameworkInfo.plist */,
+				4CF7B3332D96A62C0031C40F /* flutter_export_environment.sh */,
+				4CF7B3342D96A62C0031C40F /* Generated.xcconfig */,
+				4CF7B3352D96A62C0031C40F /* podhelper.rb */,
+				4CF7B3362D96A62C0031C40F /* README.md */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		4CF7B3412D96A62C0031C40F /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3382D96A62C0031C40F /* AppDelegate.h */,
+				4CF7B3392D96A62C0031C40F /* AppDelegate.m */,
+				4CF7B33A2D96A62C0031C40F /* Assets.xcassets */,
+				4CF7B33B2D96A62C0031C40F /* Info.plist */,
+				4CF7B33D2D96A62C0031C40F /* LaunchScreen.storyboard */,
+				4CF7B33E2D96A62C0031C40F /* main.m */,
+				4CF7B3402D96A62C0031C40F /* Main.storyboard */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		4CF7B3442D96A62C0031C40F /* .ios */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B32C2D96A62C0031C40F /* Config */,
+				4CF7B3372D96A62C0031C40F /* Flutter */,
+				4CF7B3412D96A62C0031C40F /* Runner */,
+				4CF7B3422D96A62C0031C40F /* Runner.xcodeproj */,
+				4CF7B3432D96A62C0031C40F /* Runner.xcworkspace */,
+			);
+			path = .ios;
+			sourceTree = "<group>";
+		};
+		4CF7B3462D96A62C0031C40F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3452D96A62C0031C40F /* main.dart */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4CF7B3482D96A62C0031C40F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B3472D96A62C0031C40F /* widget_test.dart */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		4CF7B3512D96A62C0031C40F /* flutter_module */ = {
+			isa = PBXGroup;
+			children = (
+				4CF7B31F2D96A62C0031C40F /* .android */,
+				4CF7B3232D96A62C0031C40F /* .dart_tool */,
+				4CF7B3282D96A62C0031C40F /* .idea */,
+				4CF7B3442D96A62C0031C40F /* .ios */,
+				4CF7B3462D96A62C0031C40F /* lib */,
+				4CF7B3482D96A62C0031C40F /* test */,
+				4CF7B3492D96A62C0031C40F /* .gitignore */,
+				4CF7B34A2D96A62C0031C40F /* .metadata */,
+				4CF7B34B2D96A62C0031C40F /* analysis_options.yaml */,
+				4CF7B34C2D96A62C0031C40F /* flutter_module.iml */,
+				4CF7B34D2D96A62C0031C40F /* flutter_module_android.iml */,
+				4CF7B34E2D96A62C0031C40F /* pubspec.lock */,
+				4CF7B34F2D96A62C0031C40F /* pubspec.yaml */,
+				4CF7B3502D96A62C0031C40F /* README.md */,
+			);
+			path = flutter_module;
+			sourceTree = "<group>";
+		};
+		4CF7B3522D96A62C0031C40F /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +1020,16 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4C6D680C2D94ECDE00E428B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CF7B3522D96A62C0031C40F /* Products */;
+					ProjectRef = 4CF7B3422D96A62C0031C40F /* Runner.xcodeproj */;
+				},
+				{
+					ProductGroup = 4CF7B2EF2D96A5C70031C40F /* Products */;
+					ProjectRef = 4CF7B2DF2D96A5C70031C40F /* Runner.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C6D680A2D94ECDE00E428B4 /* QRFlutter */,
@@ -267,6 +1099,41 @@
 			targetProxy = 4C6D68282D94ECE000E428B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CF7B2DA2D96A5C70031C40F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF7B2D92D96A5C70031C40F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CF7B2DD2D96A5C70031C40F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF7B2DC2D96A5C70031C40F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CF7B33D2D96A62C0031C40F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF7B33C2D96A62C0031C40F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CF7B3402D96A62C0031C40F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF7B33F2D96A62C0031C40F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C6D682F2D94ECE000E428B4 /* Debug */ = {

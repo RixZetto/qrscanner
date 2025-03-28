@@ -17,3 +17,6 @@ Además, incorpora un vault protegido por acceso biométrico en donde se almacen
 - Integración con Flutter (FlutterEngine y MethodChannels)
 
 ## Instalación y Configuración
+
+- El proyecto fue creado nativamente en iOS y posteriormente se añadió el modulo de Flutter manualmente.
+
