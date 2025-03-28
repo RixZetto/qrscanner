@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct QRFlutterApp: App {
+    @StateObject private var qrRepository = QRRepository.shared
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -26,6 +28,7 @@ struct QRFlutterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(qrRepository)
         }
         .modelContainer(sharedModelContainer)
     }

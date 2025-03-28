@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct QRScannerView: UIViewControllerRepresentable {
+    
+    
     func makeUIViewController(context: Context) -> some UIViewController {
         QRScannerViewController()
     }
