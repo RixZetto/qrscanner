@@ -49,10 +49,52 @@ platform :ios do
 
   # Lane to add xcframeworks to the Xcode project
   private_lane :add_flutter_frameworks do
+    require 'xcodeproj'
     project_path = "../QRFlutter.xcodeproj"
+    UI.message("Opening project #{project_path}...")
 
-    sh "xcodeproj --project #{project_path} --target 'QRFlutter' --add-frameworks App.xcframework --embed"
-    sh "xcodeproj --project #{project_path} --target 'QRFlutter' --add-frameworks Flutter.xcframework --embed"
+    unless File.exist?(project_path)
+      UI.user_error!("Project file not found at #{project_path}")
+    end
+
+    UI.message("Project file found at #{project_path}")
+    UI.message("Adding xcframeworks to project...")
+    UI.message("Current directory: #{Dir.pwd}")
+    UI.message("Listing files in parent directory:")
+
+    project = Xcodeproj::Project.open(project_path)
+    target = project.targets.find { |t| t.name == "QRFlutter" }
+
+    unless target
+      UI.user_error!("Target 'QRFlutter' not found in project")
+    end
+
+    UI.message("Target 'QRFlutter' found in project")
+
+    frameworks_group = project.groups.find { |g| g.name == "Frameworks" } || project.new_group("Frameworks")
+
+    unless frameworks_group
+      UI.user_error!("Frameworks group not found in project")
+    end
+    UI.message("Frameworks group found in project")
+
+    ["App.xcframework", "Flutter.xcframework"].each do |framework_name|
+      framework_path = File.expand_path("../#{framework_name}", project_path)
+      
+      unless File.exist?(framework_path)
+        UI.user_error!("Framework file not found at #{framework_path}")
+      end
+
+      UI.message("Adding framework #{framework_name} to target #{target.name}...")
+
+      file_ref = frameworks_group.new_reference(framework_path)
+      target.frameworks_build_phase.add_file_reference(file_ref)
+      
+      UI.success("Framework #{framework_name} added successfully.")
+    end
+
+    project.save
+    UI.success("Frameworks added successfully to target #{target.name}.")
   end
 
 end
