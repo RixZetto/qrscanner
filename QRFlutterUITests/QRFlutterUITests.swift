@@ -23,7 +23,7 @@ final class QRFlutterUITests: XCTestCase {
     }
 
     @MainActor
-    func testExample() throws {
+    func testScanButtonOpensCameraScannerView() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
@@ -35,9 +35,29 @@ final class QRFlutterUITests: XCTestCase {
         
         scanButton.tap()
         
+        let newView = app.otherElements["scanView"]
+        
+        XCTAssertTrue(newView.waitForExistence(timeout: 3), "Scan View should be displayed after tapping on Escanear QR")
+    }
+    
+    @MainActor
+    func testVaultButtonOpensProtectedView() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.buttons["vault"].tap()
+        
+        let alert = app.alerts["Do you want to allow “QRFlutter” to use Face ID?"]
+        
+        if alert.exists {
+            alert.scrollViews.otherElements.buttons["Allow"].tap()
+        }
+        
+        let flutterView = app.otherElements["flutterVaultView"]
+        XCTAssertTrue(flutterView.waitForExistence(timeout: 3), "Flutter view should be displayed after biometric authentication is valid")
         
     }
-
+    
     @MainActor
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
@@ -47,4 +67,8 @@ final class QRFlutterUITests: XCTestCase {
             }
         }
     }
+    
+    
 }
+
+

@@ -10,7 +10,6 @@ import SwiftData
 
 struct ContentView: View {
     @EnvironmentObject var router: Router
-    @EnvironmentObject var flutterEngine: FlutterEngineWrapper
     @EnvironmentObject var qrRepository: QRRepository
     @Environment(\.modelContext) private var modelContext
     //@Query private var items: [Item]
@@ -75,8 +74,7 @@ struct ContentView: View {
                             .padding()
                             .background(.white)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
-                            
-                            
+                                 
                         }
                         
                         // MARK: - Vault Button
@@ -101,12 +99,14 @@ struct ContentView: View {
                 switch route {
                 case .qrScanner:
                     ScannerView(isScanning: $isScanning) { code in
-                        self.qrRepository.saveQRCode(code)
                         self.selectedCode = IdentifiableQRCode(code)
                         self.showDetails.toggle()
-                    }
+                    }.accessibilityLabel("scanView")
                 case .flutterScreen:
-                    FlutterView(engineWrapper: flutterEngine)
+                    ProtectedView {
+                        FlutterView(repository: qrRepository, engineManager: FlutterEngineManager())
+                            .accessibilityLabel("flutterVaultView")
+                    }.accessibilityLabel("protectedView")
                 }
             }
             

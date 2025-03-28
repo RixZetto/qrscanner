@@ -41,14 +41,26 @@ class QRRepository: ObservableObject {
     }
     
     // MARK: - Add QRCodes to Repository
-     func saveQRCode(_ qrCode: String) {
-        let model = QRCode(content: qrCode)
+    func saveQRCode(_ qrCode: String) {
+        let model = QRCode(content: qrCode, scannedAt: Date())
         self.context.insert(model)
         do {
             try self.context.save()
             self.totalCodes += 1
         } catch {
-            
+            print("Error while saving \(error.localizedDescription)")
         }
+    }
+    
+    // MARK: - Fetch QRCodes
+    func fetchQRCodes() -> [QRCode] {
+        let fetchDescriptor = FetchDescriptor<QRCode>()
+        do {
+            return try self.context.fetch(fetchDescriptor)
+        }
+        catch {
+            print("Error while fetching \(error.localizedDescription)")
+        }
+        return []
     }
 }

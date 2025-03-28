@@ -16,4 +16,8 @@ class QRRepositoryMockData: QRRepository {
     override func saveQRCode(_ qrCode: String) {
         self.storedCodes.append(qrCode)
     }
+    
+    override func fetchQRCodes() -> [QRCode] {
+        return storedCodes.map { QRCode(content: $0) }
+    }
 }

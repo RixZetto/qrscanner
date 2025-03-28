@@ -24,7 +24,36 @@ class FlutterEngineManager {
     init() {
         self.engine = FlutterEngine(name: "flutter-engine")
         self.engine.run()
+        
+        let qrCodeController = FlutterMethodChannel(
+            name: "com.rixstudio.qrcode",
+            binaryMessenger: engine.binaryMessenger
+        )
+        
+        qrCodeController.setMethodCallHandler { (call, result) in
+            if call.method == "fetchQRCodes" {
+                Task { @MainActor in
+                    let codes = QRRepository.shared.fetchQRCodes().map { qrCode in
+                        return [
+                            "content": qrCode.content,
+                            "id": qrCode.id.uuidString,
+                            "scannedAt": qrCode.scannedAt?.ISO8601Format() ?? ""
+                        ]
+                    }
+                    
+                    result(codes)
+                }
+            } else {
+                result(FlutterMethodNotImplemented)
+            }
+        }
+        
         GeneratedPluginRegistrant.register(with: self.engine)
+    }
+    
+    // MARK: - Init Flutter ViewController
+    func createFlutterViewController() -> FlutterViewController {
+        FlutterViewController(engine: self.engine, nibName: nil, bundle: nil)
     }
 }
 
@@ -39,21 +68,40 @@ class FlutterEngineWrapper: ObservableObject {
     deinit {
         self.engineManager.engine.destroyContext()
     }
-    
-    // MARK: - Init Flutter ViewController
-    
-    func createFlutterViewController() -> UIViewController {
-        return FlutterViewController(engine: self.engineManager.engine, nibName: nil, bundle: nil)
-    }
-    
 }
 
 // MARK: - View
 struct FlutterView: UIViewControllerRepresentable {
-    let engineWrapper: FlutterEngineWrapper
+    var repository: QRRepository
+    var engineManager: FlutterEngineManager
     
     func makeUIViewController(context: Context) -> UIViewController {
-        engineWrapper.createFlutterViewController()
+        let vc = engineManager.createFlutterViewController()
+        
+        let qrCodeController = FlutterMethodChannel(
+            name: "com.rixstudio.qrcode",
+            binaryMessenger: engineManager.engine.binaryMessenger
+        )
+        
+        qrCodeController.setMethodCallHandler { (call, result) in
+            if call.method == "fetchQRCodes" {
+                Task { @MainActor in
+                    let codes = QRRepository.shared.fetchQRCodes().map { qrCode in
+                        return [
+                            "content": qrCode.content,
+                            "id": qrCode.id.uuidString,
+                            "scannedAt": qrCode.scannedAt?.ISO8601Format() ?? ""
+                        ]
+                    }
+                    
+                    result(codes)
+                }
+            } else {
+                result(FlutterMethodNotImplemented)
+            }
+        }
+        
+        return vc
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}

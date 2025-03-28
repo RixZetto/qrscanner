@@ -30,4 +30,5 @@ final class QRFlutterUITestsLaunchTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
     }
+    
 }

@@ -12,7 +12,6 @@ import Flutter
 @main
 struct QRFlutterApp: App {
     @StateObject private var qrRepository: QRRepository
-    @StateObject private var flutterEngine = FlutterEngineWrapper()
     @StateObject private var router = Router()
     
     var sharedModelContainer: ModelContainer = {
@@ -37,7 +36,6 @@ struct QRFlutterApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(qrRepository)
-                .environmentObject(flutterEngine)
                 .environmentObject(router)
         }
         .modelContainer(sharedModelContainer)

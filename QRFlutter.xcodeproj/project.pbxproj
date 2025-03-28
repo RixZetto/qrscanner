@@ -6,6 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		003CD1333AB7C6CCF37C1C8C /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDA44D56B0BCD68F0DF2839 /* Flutter.xcframework */; };
+		352646630E1C8C43B77D27DF /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B231FA95312AA8BAABF42C50 /* App.xcframework */; };
+		43DBED5EDB3C0B946903FF38 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160782B3E1A1B192BF07D483 /* App.xcframework */; };
+		47F67C4E66E81A2B79F0B98B /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A61D3BDABED7B6B470D143 /* App.xcframework */; };
+		4CF7B4892D9704C00031C40F /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7B4812D9704C00031C40F /* Flutter.xcframework */; };
+		4CF7B48A2D9704C00031C40F /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7B4812D9704C00031C40F /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CF7B48B2D9704C00031C40F /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7B4882D9704C00031C40F /* App.xcframework */; };
+		4CF7B48C2D9704C00031C40F /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7B4882D9704C00031C40F /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D24759C5C9CA8C35FB5B2CB /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAAFD0B6D0E19294BD869F0 /* App.xcframework */; };
+		53A30179EBFA6A0C56A67A6A /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF245A920F28C561AC890F92 /* Flutter.xcframework */; };
+		5B7FC5CFF956059F59C4C511 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F5A5C9CBCDF22F0F4E0605 /* Flutter.xcframework */; };
+		5E81663943D99A95E8469C22 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D535AD383A36BD3E26D9D931 /* App.xcframework */; };
+		6024F93F613FE69643B382AD /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C20220A9BF0DBDD91F77DB /* Flutter.xcframework */; };
+		67360EE41707712196EC8712 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A3805BAC19E4C03082AC1A /* Flutter.xcframework */; };
+		6739E4D027E5C85FD2CCE668 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDD8637D3DFF85A2CC73667 /* App.xcframework */; };
+		7F6E9B1C28E4C75CD0B7C929 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3F29F689B9F0A8209B523F /* App.xcframework */; };
+		894283CB50B389EE7C0B13EF /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDD58FC501E8873F3E07869 /* App.xcframework */; };
+		B8B6D60498DFDE9E05A9E0C8 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50953D0D0F08C4107F65797 /* Flutter.xcframework */; };
+		D33F8BF9D7A8562439F4B8D0 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74BB212B2798667E44CB741 /* Flutter.xcframework */; };
+		E385645CC77D3FA8E677E34D /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DD7948645D7AC06F21DC2A /* Flutter.xcframework */; };
+		F1A0D7DE2B6BE0794E70E59C /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AAE29F34CB70EE79C41F6C /* App.xcframework */; };
+		FE43471CEA078CC96D767274 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12612BB0E2927235A6882749 /* Flutter.xcframework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4C6D681E2D94ECE000E428B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,7 +48,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4CF7B48D2D9704C00031C40F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4CF7B48A2D9704C00031C40F /* Flutter.xcframework in Embed Frameworks */,
+				4CF7B48C2D9704C00031C40F /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		12612BB0E2927235A6882749 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
+		160782B3E1A1B192BF07D483 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		30A3805BAC19E4C03082AC1A /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		33C20220A9BF0DBDD91F77DB /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		38A61D3BDABED7B6B470D143 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
 		4C6D680B2D94ECDE00E428B4 /* QRFlutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRFlutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D681D2D94ECE000E428B4 /* QRFlutterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRFlutterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D68272D94ECE000E428B4 /* QRFlutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRFlutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,21 +184,42 @@
 		4CF7B34E2D96A62C0031C40F /* pubspec.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = pubspec.lock; sourceTree = "<group>"; };
 		4CF7B34F2D96A62C0031C40F /* pubspec.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pubspec.yaml; sourceTree = "<group>"; };
 		4CF7B3502D96A62C0031C40F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CF7B4812D9704C00031C40F /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
+		4CF7B4882D9704C00031C40F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
+		6DDD8637D3DFF85A2CC73667 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		9EDD58FC501E8873F3E07869 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		A7AAE29F34CB70EE79C41F6C /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		AD3F29F689B9F0A8209B523F /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		B231FA95312AA8BAABF42C50 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		BAAAFD0B6D0E19294BD869F0 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = App.xcframework; sourceTree = "<group>"; };
+		C50953D0D0F08C4107F65797 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		D535AD383A36BD3E26D9D931 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
+		E6F5A5C9CBCDF22F0F4E0605 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
+		E74BB212B2798667E44CB741 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		F9DD7948645D7AC06F21DC2A /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		FCDA44D56B0BCD68F0DF2839 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		FF245A920F28C561AC890F92 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4C6D680D2D94ECDE00E428B4 /* QRFlutter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = QRFlutter;
 			sourceTree = "<group>";
 		};
 		4C6D68202D94ECE000E428B4 /* QRFlutterTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = QRFlutterTests;
 			sourceTree = "<group>";
 		};
 		4C6D682A2D94ECE000E428B4 /* QRFlutterUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = QRFlutterUITests;
 			sourceTree = "<group>";
 		};
@@ -164,6 +230,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF7B4892D9704C00031C40F /* Flutter.xcframework in Frameworks */,
+				4CF7B48B2D9704C00031C40F /* App.xcframework in Frameworks */,
+				5E81663943D99A95E8469C22 /* App.xcframework in Frameworks */,
+				FE43471CEA078CC96D767274 /* Flutter.xcframework in Frameworks */,
+				47F67C4E66E81A2B79F0B98B /* App.xcframework in Frameworks */,
+				5B7FC5CFF956059F59C4C511 /* Flutter.xcframework in Frameworks */,
+				894283CB50B389EE7C0B13EF /* App.xcframework in Frameworks */,
+				67360EE41707712196EC8712 /* Flutter.xcframework in Frameworks */,
+				43DBED5EDB3C0B946903FF38 /* App.xcframework in Frameworks */,
+				003CD1333AB7C6CCF37C1C8C /* Flutter.xcframework in Frameworks */,
+				352646630E1C8C43B77D27DF /* App.xcframework in Frameworks */,
+				E385645CC77D3FA8E677E34D /* Flutter.xcframework in Frameworks */,
+				6739E4D027E5C85FD2CCE668 /* App.xcframework in Frameworks */,
+				6024F93F613FE69643B382AD /* Flutter.xcframework in Frameworks */,
+				7F6E9B1C28E4C75CD0B7C929 /* App.xcframework in Frameworks */,
+				B8B6D60498DFDE9E05A9E0C8 /* Flutter.xcframework in Frameworks */,
+				F1A0D7DE2B6BE0794E70E59C /* App.xcframework in Frameworks */,
+				D33F8BF9D7A8562439F4B8D0 /* Flutter.xcframework in Frameworks */,
+				4D24759C5C9CA8C35FB5B2CB /* App.xcframework in Frameworks */,
+				53A30179EBFA6A0C56A67A6A /* Flutter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +294,28 @@
 		4CF7B2902D96A5C70031C40F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CF7B4882D9704C00031C40F /* App.xcframework */,
+				4CF7B4812D9704C00031C40F /* Flutter.xcframework */,
 				4CF7B3512D96A62C0031C40F /* flutter_module */,
 				4CF7B2EE2D96A5C70031C40F /* flutter_module */,
+				D535AD383A36BD3E26D9D931 /* App.xcframework */,
+				12612BB0E2927235A6882749 /* Flutter.xcframework */,
+				38A61D3BDABED7B6B470D143 /* App.xcframework */,
+				E6F5A5C9CBCDF22F0F4E0605 /* Flutter.xcframework */,
+				9EDD58FC501E8873F3E07869 /* App.xcframework */,
+				30A3805BAC19E4C03082AC1A /* Flutter.xcframework */,
+				160782B3E1A1B192BF07D483 /* App.xcframework */,
+				FCDA44D56B0BCD68F0DF2839 /* Flutter.xcframework */,
+				B231FA95312AA8BAABF42C50 /* App.xcframework */,
+				F9DD7948645D7AC06F21DC2A /* Flutter.xcframework */,
+				6DDD8637D3DFF85A2CC73667 /* App.xcframework */,
+				33C20220A9BF0DBDD91F77DB /* Flutter.xcframework */,
+				AD3F29F689B9F0A8209B523F /* App.xcframework */,
+				C50953D0D0F08C4107F65797 /* Flutter.xcframework */,
+				A7AAE29F34CB70EE79C41F6C /* App.xcframework */,
+				E74BB212B2798667E44CB741 /* Flutter.xcframework */,
+				BAAAFD0B6D0E19294BD869F0 /* App.xcframework */,
+				FF245A920F28C561AC890F92 /* Flutter.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -924,6 +1030,7 @@
 				4C6D68072D94ECDE00E428B4 /* Sources */,
 				4C6D68082D94ECDE00E428B4 /* Frameworks */,
 				4C6D68092D94ECDE00E428B4 /* Resources */,
+				4CF7B48D2D9704C00031C40F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -933,8 +1040,6 @@
 				4C6D680D2D94ECDE00E428B4 /* QRFlutter */,
 			);
 			name = QRFlutter;
-			packageProductDependencies = (
-			);
 			productName = QRFlutter;
 			productReference = 4C6D680B2D94ECDE00E428B4 /* QRFlutter.app */;
 			productType = "com.apple.product-type.application";
@@ -956,8 +1061,6 @@
 				4C6D68202D94ECE000E428B4 /* QRFlutterTests */,
 			);
 			name = QRFlutterTests;
-			packageProductDependencies = (
-			);
 			productName = QRFlutterTests;
 			productReference = 4C6D681D2D94ECE000E428B4 /* QRFlutterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -979,8 +1082,6 @@
 				4C6D682A2D94ECE000E428B4 /* QRFlutterUITests */,
 			);
 			name = QRFlutterUITests;
-			packageProductDependencies = (
-			);
 			productName = QRFlutterUITests;
 			productReference = 4C6D68272D94ECE000E428B4 /* QRFlutterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -1267,6 +1368,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "QRScanner necesita acceder a tu camara para escanear los códigos QR";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "QRScanner necesita acceder a tu autenticación biométrica";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1297,6 +1399,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "QRScanner necesita acceder a tu camara para escanear los códigos QR";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "QRScanner necesita acceder a tu autenticación biométrica";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
