@@ -7,10 +7,10 @@
 import SwiftUI
 
 struct QRScannerView: UIViewControllerRepresentable {
-    
+    @EnvironmentObject var qrRepository: QRRepository
     
     func makeUIViewController(context: Context) -> some UIViewController {
-        QRScannerViewController()
+        QRScannerViewController(qrRepository: qrRepository)
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {

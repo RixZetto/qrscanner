@@ -87,7 +87,9 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 extension QRScannerViewController: QRScannerViewDelegate {
     
     func onCameraPermissionGranted() {
-        self.captureSession.startRunning()
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.captureSession.startRunning()
+        }
     }
     
     func showRequestPermission() {
