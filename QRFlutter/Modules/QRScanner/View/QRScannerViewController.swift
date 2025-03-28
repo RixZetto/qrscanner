@@ -7,19 +7,15 @@
 import UIKit
 import AVFoundation
 
+protocol QRScannerViewControllerDelegate {
+    func onScanned(code: String)
+}
+
 class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
-    let viewModel: QRScannerViewModel!
-    
-    init(qrRepository: QRRepository) {
-        self.viewModel = QRScannerViewModel(repository: qrRepository)
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    var delegate: QRScannerViewControllerDelegate?
+    let viewModel: QRScannerViewModel = QRScannerViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +71,7 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
            metadataObject.type == .qr,
            let qrCode = metadataObject.stringValue {
             self.captureSession.stopRunning()
-            self.viewModel.storeQR(qrCode)
+            self.delegate?.onScanned(code: qrCode)
         }
     }
 

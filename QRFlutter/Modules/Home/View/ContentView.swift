@@ -42,7 +42,7 @@ struct ContentView: View {
                     
                     // MARK: - Scan Button
                     
-                    NavigationLink(destination: QRScannerView()) {
+                    NavigationLink(destination: ScannerView()) {
                         ScanButton()
                     }.accessibilityLabel("scanQR")
                     
@@ -72,7 +72,7 @@ struct ContentView: View {
                         // MARK: - Vault Button
                         HStack {
                             Spacer()
-                            NavigationLink(destination: QRScannerView()) {
+                            NavigationLink(destination: ScannerView()) {
                                 VaultButton()
                             }
                             .accessibilityLabel("vault")

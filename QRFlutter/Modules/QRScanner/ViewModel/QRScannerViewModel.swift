@@ -15,14 +15,9 @@ protocol QRScannerViewDelegate: AnyObject {
 }
 
 // MARK: - ViewModel
-class QRScannerViewModel {
+class QRScannerViewModel: ObservableObject {
 
     weak var delegate: QRScannerViewDelegate?
-    private let repository: QRRepository
-    
-    init(repository: QRRepository) {
-        self.repository = repository
-    }
     
     // MARK: - Check permissions
     func checkCameraPermissions() {
@@ -46,12 +41,6 @@ class QRScannerViewModel {
             self.delegate?.showRequestPermission()
             print("Camera permission denied")
         }
-    }
-    
-    // MARK: - Store QR
-    @MainActor
-    func storeQR(_ code: String) {
-        self.repository.saveQRCode(code)
     }
     
     // MARK: - Handle Navigation
