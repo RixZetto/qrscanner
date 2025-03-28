@@ -1,0 +1,48 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode project files
+xcuserdata/
+*.xcworkspace/
+*.xcuserstate
+DerivedData/
+.idea/
+Pods/
+!default.pods.podfile.lock
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Build artifacts
+build/
+*.ipa
+*.app
+*.dSYM.zip
+*.dSYM
+
+# Flutter module inside iOS project
+flutter_module/.dart_tool/
+flutter_module/.packages
+flutter_module/.flutter-plugins
+flutter_module/.flutter-plugins-dependencies
+flutter_module/build/
+flutter_module/.ios/Flutter/Flutter.podspec
+flutter_module/.ios/Flutter/Generated.xcconfig
+flutter_module/.ios/Flutter/App.framework
+flutter_module/.ios/Flutter/Flutter.framework
+
+# Flutter Android (if module includes an Android part)
+flutter_module/android/.gradle/
+flutter_module/android/.idea/
+flutter_module/android/local.properties
+
+# Flutter pub dependencies
+flutter_module/pubspec.lock
+flutter_module/.pub-cache/
+
+# Ignore environment settings
+.env
+.env.*
