@@ -7,15 +7,20 @@
 import Foundation
 
 class ScannerViewModel: ObservableObject {
-    
     private let repository: QRRepository
+    @Published var showToast: Bool = false
     
     init(repository: QRRepository) {
         self.repository = repository
     }
-
+    
     @MainActor
-    func storeQR(_ qr: String) async {
-        self.repository.saveQRCode(qr)
+    func handleScannedCode(_ code: String) async {
+        self.showToast = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.showToast = false
+        }
+        self.repository.saveQRCode(code)
     }
+
 }

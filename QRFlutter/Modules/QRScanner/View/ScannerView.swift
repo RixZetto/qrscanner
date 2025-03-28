@@ -8,11 +8,8 @@ import SwiftUI
 import AVFoundation
 
 struct ScannerView: UIViewControllerRepresentable {
-    @StateObject var viewModel: ScannerViewModel
-    
-    init(qrRepository: QRRepository) {
-        self._viewModel = StateObject(wrappedValue: ScannerViewModel(repository: qrRepository))
-    }
+    @Binding var isScanning: Bool
+    var onCodeScanned: ((String) -> Void)?
     
     func makeUIViewController(context: Context) -> some UIViewController {
         let vc = QRScannerViewController()
@@ -21,7 +18,14 @@ struct ScannerView: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        // TODO: - 
+        if let qrVC = uiViewController as? QRScannerViewController {
+            if isScanning {
+                qrVC.startScanner()
+            }
+            else {
+                qrVC.stopScanner()
+            }
+        }
     }
     
     func makeCoordinator() -> Coordinator {
@@ -35,10 +39,16 @@ struct ScannerView: UIViewControllerRepresentable {
             self.parent = parent
         }
         
+        func onScannerStarted() {
+            self.parent.isScanning = true
+        }
+        
+        func onScannerStopped() {
+            self.parent.isScanning = false
+        }
+        
         func onScanned(code: String) {
-            Task { @MainActor in
-                await self.parent.viewModel.storeQR(code)
-            }
+            self.parent.onCodeScanned?(code)
         }
     }
 }

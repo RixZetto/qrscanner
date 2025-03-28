@@ -43,8 +43,11 @@ struct ToastModifier: ViewModifier {
 }
 
 extension View {
-    func toast(isShowing: Binding<Bool>, message: String) -> some View {
-        self.modifier(ToastModifier(isShowing: isShowing, message: message))
+    func toast(isShowing: Binding<Bool>, message: String, onComplete: (() -> Void)? = nil) -> some View {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            onComplete?()
+        }
+        return self.modifier(ToastModifier(isShowing: isShowing, message: message))
     }
 }
 

@@ -9,10 +9,14 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @EnvironmentObject private var qrRepository: QRRepository
+    @EnvironmentObject var qrRepository: QRRepository
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     @State private var isAuthenticated = false
+    @State private var showToast: Bool = false
+    @State private var selectedCode: IdentifiableQRCode?
+    @State private var showDetails: Bool = false
+    @State private var isScanning: Bool = false
     @StateObject private var viewModel = ContentViewModel()
 
     var body: some View {
@@ -43,7 +47,11 @@ struct ContentView: View {
                     
                     // MARK: - Scan Button
                     
-                    NavigationLink(destination: ScannerView(qrRepository: qrRepository)) {
+                    NavigationLink(destination: ScannerView(isScanning: $isScanning) { code in
+                        self.qrRepository.saveQRCode(code)
+                        self.selectedCode = IdentifiableQRCode(code)
+                        self.showDetails.toggle()
+                    }) {
                         ScanButton()
                     }.accessibilityLabel("scanQR")
                     
@@ -73,8 +81,13 @@ struct ContentView: View {
                         // MARK: - Vault Button
                         HStack {
                             Spacer()
-                            NavigationLink(destination: ScannerView(qrRepository: qrRepository)) {
-                                VaultButton()
+                            NavigationLink(destination: ScannerView(isScanning: $isScanning) { code in
+                                self.qrRepository.saveQRCode(code)
+                            }) {
+                                ZStack {
+                                    VaultButton()
+                                }
+                                
                             }
                             .accessibilityLabel("vault")
                             .padding(.horizontal, 40)
@@ -87,13 +100,29 @@ struct ContentView: View {
                 }
             }
             
-        }.sheet(isPresented: $viewModel.isAboutViewPresented) {
+        }
+        .sheet(isPresented: $viewModel.isAboutViewPresented) {
             Group {
                 AboutView()
             }.accessibilityIdentifier("AboutSheet")
                 .presentationDetents([.medium, .large])
                 .padding(10)
             
+        }
+        .sheet(isPresented: $showDetails) {
+            if let selectedCode = self.selectedCode {
+                QRDetailView(code: selectedCode, showDetail: $showDetails, repository: qrRepository) { storedCode in
+                    self.showToast.toggle()
+                }
+            }
+        }
+        .toast(isShowing: $showToast, message: "✅ QR Guardado en Vault!") {
+            self.showToast = false
+        }
+        .onChange(of: showDetails) { oldValue, newValue in
+            if newValue == false {
+                self.isScanning = true
+            }
         }
     }
 
@@ -115,5 +144,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: QRCode.self, inMemory: true)
+        .environmentObject(QRRepositoryMockData())
 }

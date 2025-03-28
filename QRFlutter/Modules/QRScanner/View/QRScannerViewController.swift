@@ -8,6 +8,8 @@ import UIKit
 import AVFoundation
 
 protocol QRScannerViewControllerDelegate {
+    func onScannerStarted()
+    func onScannerStopped()
     func onScanned(code: String)
 }
 
@@ -70,11 +72,23 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
         if let metadataObject = metadataObjects.first as? AVMetadataMachineReadableCodeObject,
            metadataObject.type == .qr,
            let qrCode = metadataObject.stringValue {
-            self.captureSession.stopRunning()
+            self.stopScanner()
             self.delegate?.onScanned(code: qrCode)
         }
     }
-
+    
+    //MARK: - Start or Stop Scanner
+    func startScanner() {
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.captureSession.startRunning()
+            self.delegate?.onScannerStarted()
+        }
+    }
+    
+    func stopScanner() {
+        self.captureSession.stopRunning()
+        self.delegate?.onScannerStopped()
+    }
           
 }
 
@@ -83,9 +97,7 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 extension QRScannerViewController: QRScannerViewDelegate {
     
     func onCameraPermissionGranted() {
-        DispatchQueue.global(qos: .userInitiated).async {
-            self.captureSession.startRunning()
-        }
+        self.startScanner()
     }
     
     func showRequestPermission() {
