@@ -9,9 +9,11 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @StateObject private var router = Router()
+    @EnvironmentObject var flutterEngine: FlutterEngineWrapper
     @EnvironmentObject var qrRepository: QRRepository
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    //@Query private var items: [Item]
     @State private var isAuthenticated = false
     @State private var showToast: Bool = false
     @State private var selectedCode: IdentifiableQRCode?
@@ -20,7 +22,7 @@ struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.path) {
             ZStack {
                 
                 // Wallpaper
@@ -47,14 +49,13 @@ struct ContentView: View {
                     
                     // MARK: - Scan Button
                     
-                    NavigationLink(destination: ScannerView(isScanning: $isScanning) { code in
-                        self.qrRepository.saveQRCode(code)
-                        self.selectedCode = IdentifiableQRCode(code)
-                        self.showDetails.toggle()
-                    }) {
+                    Button {
+                        self.router.navigate(to: .qrScanner)
+                    } label: {
                         ScanButton()
                     }.accessibilityLabel("scanQR")
                     
+
                     Spacer()
                     
                     
@@ -81,16 +82,14 @@ struct ContentView: View {
                         // MARK: - Vault Button
                         HStack {
                             Spacer()
-                            NavigationLink(destination: ScannerView(isScanning: $isScanning) { code in
-                                self.qrRepository.saveQRCode(code)
-                            }) {
-                                ZStack {
-                                    VaultButton()
-                                }
-                                
+                            Button {
+                                self.router.navigate(to: .qrScanner)
+                            } label: {
+                                VaultButton()
                             }
                             .accessibilityLabel("vault")
                             .padding(.horizontal, 40)
+                            
                         }
                         
                         
@@ -100,6 +99,18 @@ struct ContentView: View {
                 }
             }
             
+        }
+        .navigationDestination(for: AppRoute.self) { route in
+            switch route {
+            case .qrScanner:
+                ScannerView(isScanning: $isScanning) { code in
+                    self.qrRepository.saveQRCode(code)
+                    self.selectedCode = IdentifiableQRCode(code)
+                    self.showDetails.toggle()
+                }
+            case .flutterScreen:
+                FlutterView(engineWrapper: flutterEngine)
+            }
         }
         .sheet(isPresented: $viewModel.isAboutViewPresented) {
             Group {
@@ -126,20 +137,6 @@ struct ContentView: View {
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
 }
 
 #Preview {

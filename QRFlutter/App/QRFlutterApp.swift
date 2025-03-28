@@ -7,14 +7,16 @@
 
 import SwiftUI
 import SwiftData
+import Flutter
 
 @main
 struct QRFlutterApp: App {
-    @StateObject private var qrRepository = QRRepository.shared
+    @StateObject private var qrRepository: QRRepository
+    @StateObject private var flutterEngine: FlutterEngineWrapper
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            QRCode.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -24,11 +26,19 @@ struct QRFlutterApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    
+    init() {
+        let engineWrapper = FlutterEngineWrapper()
+        self._qrRepository = StateObject(wrappedValue: QRRepository.shared)
+        self._flutterEngine = StateObject(wrappedValue: engineWrapper)
+    }
+    
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(qrRepository)
+                .environmentObject(flutterEngine)
         }
         .modelContainer(sharedModelContainer)
     }
