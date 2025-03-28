@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @StateObject private var router = Router()
+    @EnvironmentObject var router: Router
     @EnvironmentObject var flutterEngine: FlutterEngineWrapper
     @EnvironmentObject var qrRepository: QRRepository
     @Environment(\.modelContext) private var modelContext
@@ -22,7 +22,7 @@ struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
 
     var body: some View {
-        NavigationStack(path: $router.path) {
+        NavigationStack(path: self.$router.path) {
             ZStack {
                 
                 // Wallpaper
@@ -97,21 +97,21 @@ struct ContentView: View {
                     
                     
                 }
+            }.navigationDestination(for: AppRoute.self) { route in
+                switch route {
+                case .qrScanner:
+                    ScannerView(isScanning: $isScanning) { code in
+                        self.qrRepository.saveQRCode(code)
+                        self.selectedCode = IdentifiableQRCode(code)
+                        self.showDetails.toggle()
+                    }
+                case .flutterScreen:
+                    FlutterView(engineWrapper: flutterEngine)
+                }
             }
             
         }
-        .navigationDestination(for: AppRoute.self) { route in
-            switch route {
-            case .qrScanner:
-                ScannerView(isScanning: $isScanning) { code in
-                    self.qrRepository.saveQRCode(code)
-                    self.selectedCode = IdentifiableQRCode(code)
-                    self.showDetails.toggle()
-                }
-            case .flutterScreen:
-                FlutterView(engineWrapper: flutterEngine)
-            }
-        }
+        
         .sheet(isPresented: $viewModel.isAboutViewPresented) {
             Group {
                 AboutView()
