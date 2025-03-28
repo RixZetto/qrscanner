@@ -6,11 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4CF7B3CB2D96F62E0031C40F /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7B3C92D96F62E0031C40F /* App.xcframework */; };
-		4CF7B3CC2D96F62E0031C40F /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7B3CA2D96F62E0031C40F /* Flutter.xcframework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		4C6D681E2D94ECE000E428B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -144,8 +139,6 @@
 		4CF7B34E2D96A62C0031C40F /* pubspec.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = pubspec.lock; sourceTree = "<group>"; };
 		4CF7B34F2D96A62C0031C40F /* pubspec.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = pubspec.yaml; sourceTree = "<group>"; };
 		4CF7B3502D96A62C0031C40F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4CF7B3C92D96F62E0031C40F /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
-		4CF7B3CA2D96F62E0031C40F /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -171,8 +164,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF7B3CB2D96F62E0031C40F /* App.xcframework in Frameworks */,
-				4CF7B3CC2D96F62E0031C40F /* Flutter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +192,6 @@
 				4C6D682A2D94ECE000E428B4 /* QRFlutterUITests */,
 				4CF7B2902D96A5C70031C40F /* Frameworks */,
 				4C6D680C2D94ECDE00E428B4 /* Products */,
-				4CF7B3C92D96F62E0031C40F /* App.xcframework */,
-				4CF7B3CA2D96F62E0031C40F /* Flutter.xcframework */,
 			);
 			sourceTree = "<group>";
 		};
